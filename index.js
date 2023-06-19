@@ -9,7 +9,7 @@ app.use(express.static(__dirname + '/public'));
 app.get("/",function(req,res){res.render('index');});
 
 
-app.get("/id",function(req,res){res.send(buttonValue);});
+app.get("/id",function(req,res){res.send(buttonValue.toString());});
 
 var buttonValue=0;
 
